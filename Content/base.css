@@ -1,0 +1,71 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: url('../Images/bg-1920-1080.png') no-repeat center right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-transform: uppercase;
+  font-family: 'Oxygen', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.full-size {
+  height: 100%;
+  width: 100%;
+}
+.height-100-interest {
+  height: 100%;
+}
+div.b__text {
+  display: table;
+  text-align: center;
+}
+div.t__center {
+  display: table-cell;
+  vertical-align: middle;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.social {
+  font-size: 42px;
+}
+.twitter {
+  color: #1dcaff;
+}
+.twitter:hover {
+  color: #03c4ff;
+}
+.linkenin {
+  color: #0077b3;
+}
+.linkenin:hover {
+  color: #069;
+}
+.project {
+  padding: 6px 12px;
+  color: #646464;
+  border: 1px solid #646464;
+  border-radius: 3px;
+}
+.project:hover {
+  color: #646464;
+}
+/* somee.com fixed */
+center {
+  position: absolute !important;
+  bottom: 0 !important;
+  visibility: collapse !important;
+}
+/*# sourceMappingURL=base.css.map */

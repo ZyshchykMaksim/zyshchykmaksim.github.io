@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="Content/normalize.css" rel="stylesheet" />
+	<link href="Content/font-awesome.min.css" rel="stylesheet" />
+	<link href="Content/animate.min.css" rel="stylesheet" />
+	<link href="Content/base.min.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="height-100-interest">
+		<div class="b__text full-size">
+			<div class="t__center">
+				<h1 id="tHello" data-in-effect="flipInY" style="color: rgb(235, 203, 147); font-weight: 700; font-size: 42px;">
+					Hi, my name is Max and I'm a developer
+				</h1>
+				<h3 id="tLocation" style="color: #646464; font-weight: 300;font-size: 28px; visibility: hidden">I live in a small country called Belarus</h3>
+				<p id="bSocialCollection" style="visibility: hidden;">
+					<a href="https://twitter.com/MasiaMarch" target="_blank" class="social twitter" title="twitter">
+						<i class="fa fa-twitter-square" aria-hidden="true"></i>
+					</a>
+					<a href="https://www.linkedin.com/profile/view?id=286117944" target="_blank" class="social linkenin" title="linkedin">
+						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+					</a>
+				</p>
+				<p id="bProjects" style="visibility: hidden; margin-top: 30px;">
+					<a href="https://github.com/ZyshchykMaksim" class="project">My projects</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<script src="Scripts/jquery-2.2.4.min.js"></script>
+	<script src="Scripts/jquery.fittext.js"></script>
+	<script src="Scripts/jquery.lettering.js"></script>
+	<script src="Scripts/jquery.textillate.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var hello = $('#tHello');
+			var location = $('#tLocation');
+			var social = $('#bSocialCollection');
+			var project = $('#bProjects');
+			hello.textillate();
+			hello.on('inAnimationEnd.tlt', function () {
+				location.css('visibility', 'visible').addClass('animated fadeInUp');
+			});
+			location.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+				social.css('visibility', 'visible').addClass('animated fadeInUp');
+			});
+			social.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+				project.css('visibility', 'visible').addClass('animated fadeInUp');
+			});
+		});
+	</script>
+</body>
+</html>
